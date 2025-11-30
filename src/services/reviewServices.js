@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
-import morckReviews from "../mockData/reviews.json" assert { type: "json" };
+import { morckReviews } from "../mockData/reviewData.js";
+// import morckReviews from "../mockData/reviews.json" assert { type: "json" };
 
 dotenv.config();
 
