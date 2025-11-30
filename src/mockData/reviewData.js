@@ -1,4 +1,4 @@
-export const morckReviews = [
+export const mockReviews = [
   {
     id: 7433,
     type: "host-to-guest",
@@ -40,11 +40,17 @@ export const morckReviews = [
       cancellationPolicy: [
         {
           policy: "For stays less than 28 days",
-          notes: ["Full refund up to 14 days before check-in", "No refund for bookings less than 14 days before check-in"]
+          notes: [
+            "Full refund up to 14 days before check-in",
+            "No refund for bookings less than 14 days before check-in"
+          ]
         },
         {
           policy: "FFor stays of 28 days or more",
-          notes: ["Full refund up to 14 days before check-in", "No refund for bookings less than 14 days before check-in"]
+          notes: [
+            "Full refund up to 14 days before check-in",
+            "No refund for bookings less than 14 days before check-in"
+          ]
         }
       ]
     }
@@ -54,7 +60,8 @@ export const morckReviews = [
     type: "guest-to-host",
     status: "published",
     rating: 9,
-    publicReview: "Amazing location and very clean apartment. Host was responsive and helpful throughout the stay.",
+    publicReview:
+      "Amazing location and very clean apartment. Host was responsive and helpful throughout the stay.",
     reviewCategory: [
       { category: "cleanliness", rating: 9 },
       { category: "communication", rating: 10 },
@@ -70,7 +77,8 @@ export const morckReviews = [
       "https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg",
       "https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg"
     ],
-    propertyDetails: "A modern and bright apartment located in vibrant Shoreditch. Features include a full kitchen, washing machine, and comfortable furnishing. Perfect for travelers wanting to explore London.",
+    propertyDetails:
+      "A modern and bright apartment located in vibrant Shoreditch. Features include a full kitchen, washing machine, and comfortable furnishing. Perfect for travelers wanting to explore London.",
     amenities: ["Kitchen", "WiFi", "Hair Dryer", "Heating", "Smoke Detector"],
     policies: {
       checkIn: "3:00pm",
@@ -79,10 +87,171 @@ export const morckReviews = [
       cancellationPolicy: [
         {
           policy: "Standard",
-          notes: ["Full refund before 7 days", "50% refund before 3 days", "No refund for cancellations within 48 hours"]
+          notes: [
+            "Full refund before 7 days",
+            "50% refund before 3 days",
+            "No refund for cancellations within 48 hours"
+          ]
         }
       ]
     }
   },
-  // ... continue similarly for the other entries
+  {
+    id: 7435,
+    type: "guest-to-host",
+    status: "published",
+    rating: 8,
+    publicReview:
+      "Comfortable stay overall, though the street was a bit noisy at night. Apartment was spotless.",
+    reviewCategory: [
+      { category: "cleanliness", rating: 9 },
+      { category: "communication", rating: 8 },
+      { category: "value", rating: 7 }
+    ],
+    submittedAt: "2022-06-11 10:12:44",
+    guestName: "David Miller",
+    listingName: "2B N1 A - 29 Shoreditch Heights",
+    image_urls: [
+      "https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg",
+      "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg",
+      "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg"
+    ],
+    propertyDetails:
+      "Stylish one-bedroom flat with modern appliances, located in the heart of Shoreditch.",
+    amenities: ["Kitchen", "Internet", "Washing Machine", "Heating"],
+    policies: {
+      checkIn: "3:00pm",
+      checkOut: "10:00am",
+      houseRules: ["No smoking"],
+      cancellationPolicy: [
+        {
+          policy: "Flexible",
+          notes: ["Free cancellation up to 5 days prior"]
+        }
+      ]
+    }
+  },
+  {
+    id: 7470,
+    type: "host-to-guest",
+    status: "published",
+    rating: null,
+    publicReview: "Very polite guest, would host again.",
+    reviewCategory: [
+      { category: "cleanliness", rating: 10 },
+      { category: "communication", rating: 9 },
+      { category: "respect_house_rules", rating: 10 }
+    ],
+    submittedAt: "2022-05-05T09:30:00.000Z",
+    guestName: "Henry Young",
+    listingName: "8C 2B - 14 Baker Lane",
+    image_urls: [
+      "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg",
+      "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg",
+      "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg",
+      "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "https://images.pexels.com/photos/276224/pexels-photo-276224.jpeg"
+    ],
+    propertyDetails:
+      "Bright two-bedroom apartment located near Central London with fully-equipped kitchen and private balcony.",
+    amenities: ["Internet", "Kitchen", "Heating", "Washer"],
+    policies: {
+      checkIn: "2:00pm",
+      checkOut: "11:00am",
+      houseRules: ["No pets", "No parties"],
+      cancellationPolicy: [{ policy: "Standard", notes: ["Full refund before 14 days"] }]
+    }
+  },
+  {
+    id: 7471,
+    type: "guest-to-host",
+    status: "published",
+    rating: 9,
+    publicReview:
+      "Great stay. Loved the balcony and quick access to the underground. Host was amazing!",
+    reviewCategory: [
+      { category: "cleanliness", rating: 9 },
+      { category: "communication", rating: 10 },
+      { category: "location", rating: 9 }
+    ],
+    submittedAt: "2022-06-10T11:10:00.000Z",
+    guestName: "Maria Gonzalez",
+    listingName: "8C 2B - 14 Baker Lane",
+    image_urls: [
+      "https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg",
+      "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg",
+      "https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg"
+    ],
+    propertyDetails: "Modern flat with private balcony and great views of the city.",
+    amenities: ["WiFi", "Smoke Detector", "Kitchen"],
+    policies: {
+      checkIn: "2:00pm",
+      checkOut: "11:00am",
+      houseRules: ["No smoking"],
+      cancellationPolicy: [{ policy: "Flexible", notes: ["Free cancellation within 48 hours"] }]
+    }
+  },
+  {
+    id: 7600,
+    type: "guest-to-host",
+    status: "published",
+    rating: 10,
+    publicReview:
+      "Absolutely loved the stay. Beautiful interior, quiet area, and the WiFi was very fast.",
+    reviewCategory: [
+      { category: "cleanliness", rating: 10 },
+      { category: "communication", rating: 10 },
+      { category: "value", rating: 9 }
+    ],
+    submittedAt: "2023-02-18T09:12:00.000Z",
+    guestName: "Sophia King",
+    listingName: "4B 1A - Queens Court",
+    image_urls: [
+      "https://images.pexels.com/photos/112474/pexels-photo-112474.jpeg",
+      "https://images.pexels.com/photos/37347/office-room-office-office-chair.jpeg",
+      "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg"
+    ],
+    propertyDetails:
+      "A charming and elegant 1-bedroom apartment in a serene neighborhood, newly renovated with stylish design.",
+    amenities: ["Kitchen", "Internet", "Hair Dryer", "Heating"],
+    policies: {
+      checkIn: "3:00pm",
+      checkOut: "11:00am",
+      houseRules: ["No pets", "No parties"],
+      cancellationPolicy: [{ policy: "Moderate", notes: ["Full refund up to 5 days before arrival"] }]
+    }
+  },
+  {
+    id: 7601,
+    type: "host-to-guest",
+    status: "published",
+    rating: null,
+    publicReview:
+      "Guest was respectful and left the property in great condition. Highly recommended!",
+    reviewCategory: [
+      { category: "cleanliness", rating: 10 },
+      { category: "communication", rating: 9 },
+      { category: "respect_house_rules", rating: 10 }
+    ],
+    submittedAt: "2023-03-01T15:44:00.000Z",
+    guestName: "Daniel Brooks",
+    listingName: "4B 1A - Queens Court",
+    image_urls: [
+      "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg",
+      "https://images.pexels.com/photos/37347/office-room-office-office-chair.jpeg",
+      "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg"
+    ],
+    propertyDetails:
+      "Modern, calm, and designed for comfort — ideal for both business and leisure travelers.",
+    amenities: ["WiFi", "Kitchen", "Washing Machine"],
+    policies: {
+      checkIn: "3:00pm",
+      checkOut: "11:00am",
+      houseRules: ["No smoking"],
+      cancellationPolicy: [{ policy: "Strict", notes: ["No refund within 7 days of arrival"] }]
+    }
+  }
 ];
+

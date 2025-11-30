@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import { morckReviews } from "../mockData/reviewData.js";
+import { mockReviews } from "../mockData/reviewData.js";
 // import morckReviews from "../mockData/reviews.json" assert { type: "json" };
 
 dotenv.config();
@@ -27,7 +27,7 @@ class ReviewService {
 
       if (!tokenResponse.ok) {
         console.warn("Hostaway token request failed, using mock data.");
-        return ReviewService.normalizeReviews(morckReviews);
+        return ReviewService.normalizeReviews(mockReviews);
       }
 
       const tokenData = await tokenResponse.json();
@@ -43,10 +43,10 @@ class ReviewService {
         },
       });
 
-      let reviewList = morckReviews; // default fallback
+      let reviewList = mockReviews; // default fallback
       if (reviewResponse.ok) {
         const reviewResult = await reviewResponse.json();
-        reviewList = reviewResult.result || morckReviews;
+        reviewList = reviewResult.result || mockReviews;
       } else {
         console.warn("Fetching reviews failed, using mock data.");
       }
@@ -55,7 +55,7 @@ class ReviewService {
     } catch (error) {
       console.error("Error fetching reviews:", error);
 
-      return ReviewService.normalizeReviews(morckReviews);
+      return ReviewService.normalizeReviews(mockReviews);
     }
   };
 
