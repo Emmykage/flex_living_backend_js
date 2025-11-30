@@ -1,13 +1,8 @@
----
-
-### **Backend README (`README-backend.md`)**
-```markdown
 # Flex Living Reviews Dashboard - Backend
 
 ## 1. Project Overview
-The backend provides an **API to fetch, normalize, and serve reviews** for the frontend dashboard. It integrates with Hostaway's sandbox API (mocked) and ensures all review data is structured for easy consumption.
 
----
+The backend provides an **API to fetch, normalize, and serve reviews** for the frontend dashboard. It integrates with Hostaway's sandbox API (mocked) and ensures all review data is structured for easy consumption.
 
 ## 2. Tech Stack
 
@@ -15,8 +10,6 @@ The backend provides an **API to fetch, normalize, and serve reviews** for the f
 - **dotenv** (environment variables)
 - **CORS** (cross-origin requests)
 - **Fetch API / Axios** (external API calls)
-
----
 
 ## 3. Features
 
@@ -73,32 +66,28 @@ The backend provides an **API to fetch, normalize, and serve reviews** for the f
 
 ## 5. Setup Instructions
 
-Clone the repository:
 
-git clone <repo-url>
-cd backend
+    ### Clone the repository:
 
+    git clone `https://github.com/Emmykage/flex_living_backend_js.git`
+    cd backend
 
-Install dependencies:
+    ### Install dependencies:
+        - npm install
 
-npm install
+    Create .env file:
+    HOSTAWAY_ACCOUNT_ID=<your_account_id>
+    HOSTAWAY_API_KEY=<your_api_key>
+    PORT=5000
 
+    ### Start the server:
+        npm run dev
+        API endpoint:
+        GET http://localhost:5000/api/reviews/hostaway
 
-Create .env file:
+    ## Server endPoint
 
-HOSTAWAY_ACCOUNT_ID=<your_account_id>
-HOSTAWAY_API_KEY=<your_api_key>
-PORT=5000
-
-
-Start the server:
-
-npm run dev
-
-
-API endpoint:
-
-GET http://localhost:5000/api/reviews/hostaway
+    GET https://flexliving-b11f9136ef82.herokuapp.com/api/reviews/hostaway
 
 ## 6. Design & Logic Decisions
 
