@@ -4,8 +4,7 @@ import { getReviews } from '../controller/reviewController.js';
 
 const router = express.Router();
 
-router.get('/', getReviews);
-// router.get('/:id', getReview);
+router.get('/hostaway', getReviews);
 
 
 export default router;

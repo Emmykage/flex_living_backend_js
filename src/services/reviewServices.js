@@ -54,7 +54,7 @@ let reviewList = reviewResult.result;
 
       }
 
-      const normalized = reviewList.map((review) => {
+  const normalized = reviewList.map((review) => {
   const submittedAt = review.submittedAt ? new Date(review.submittedAt) : null;
   return {
     id: review.id,

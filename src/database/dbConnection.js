@@ -2,7 +2,6 @@
 const mongoUrl = process.env.MONGODB_URL
 
 const dbConnection = () => {
-  console.log("first");
   mongoose
     .connect(mongoUrl)
     .then(() => {
