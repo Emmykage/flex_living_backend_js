@@ -103,7 +103,7 @@ Supports future Google Reviews integration
 
 ## 7. Notes
 
-Hostaway sandbox API authentication may fail with provided credention or   may return empty data; mock data is provided
+Hostaway sandbox API authentication may fail with provided credention or  may return empty data; mock data is provided
 
 All API responses are JSON and structured consistently
 ```
